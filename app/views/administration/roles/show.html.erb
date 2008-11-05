@@ -1,0 +1,14 @@
+<%= show_section_label %>
+ 
+<%=
+  present :elegant do |p|
+    p.header do |r|
+      r.field 'Role Name', @resource.name
+    end
+    p.actions do |r|
+      r.text edit_action
+      r.text destroy_action
+      r.text back_action
+    end
+  end
+%>

@@ -1,0 +1,3 @@
+h1. administrate_me_users plugin
+
+Plugin's documentation... comming soon. :)

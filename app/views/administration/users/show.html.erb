@@ -1,0 +1,16 @@
+<%= show_section_label %>
+ 
+<%=
+  present :elegant do |p|
+    p.header do |r|
+      r.field 'name', @resource.name
+      r.field 'email', @resource.email
+      r.field 'login', @resource.login
+    end
+    p.actions do |r|
+      r.text edit_action
+      r.text destroy_action
+      r.text back_action
+    end
+  end
+%>
